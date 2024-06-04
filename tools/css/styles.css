@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* Codigo general del body */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('../assets/petalos.png');
+    background-size: contain;
+    font-family: 'Dancing Script', cursive;
+}
+
+#titulo{
+    font-size: 5em;
+    text-align: center;
+}
+
+/* .animadoIzquierda{
+    opacity: 0;
+    transition: all 0.9s;
+}
+
+.animadoDerecha{
+    opacity: 0;
+    transition: all 0.9s;
+}
+
+.mostrarIzquierda{
+    animation: mostrarIzquierda 2s;
+}
+
+@keyframes mostrarIzquierda{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.mostrarDerecha{
+    animation: mostrarDerecha 2s;
+}
+
+@keyframes mostrarDerecha{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
+
+#ir_arriba{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+
+    width: 5em;
+    height: 5em;
+    right: 1em;
+    bottom: 1em;
+
+    z-index: 1000;
+    transition: all 0.2s;
+}
+
+#ir_arriba img{
+    width: 3em;
+}
+
+@media (hover: hover){
+    #ir_arriba img:hover{
+        cursor: pointer;
+        width: 3.5em;
+    }
+}
+
+.ocultar{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+/* Codigo Header */
+
+header{
+    background-image: url('../assets/banner.png');
+    background-size: 75vh;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 60em;
+    padding-top: 2em;
+    margin-bottom: 5em;
+    z-index: 2;
+}
+
+.nav-bar{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    padding: 1.5em;
+    border-radius: 2.5em;
+}
+
+.nav-bar a{
+    color: #000000;
+    font-size: 2em;
+}
+
+:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+
+.welcome h1{
+    align-items: center;
+    font-size: 3em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.banner{
+    height: 50em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+
+.welcome{
+    font-size: 2em;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    font-size: 4em;
+}
+
+/* Codigo Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10em;
+}
+
+/* Codigo Acerca de Mi */
+
+.SobreMi{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be;
+    color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2em;
+    width: 100em;
+    height: 30em;
+}
+  
+.sobremi-img img{
+    width: 20em;
+    margin-left: 3em;
+    border-radius: 1em;
+    box-shadow: 0 2px 20px 10px #e49cee;
+}
+  
+.container2{
+    margin-left: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Itim', cursive;
+    gap: 3em;
+}
+
+.acerca{
+    max-width: 70%;
+}
+  
+.titulo{
+    text-align: center;
+}
+  
+.nombre p{
+    font-size: 2em;
+}
+  
+/* Codigo Experiencia */
+
+.experiencia{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100em;
+    padding: 2em;
+    color: #000000;
+}
+  
+.experiencia h1{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+  
+.exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5em;
+}
+  
+.trabajo{
+    background-color: rgba(151, 208, 255, 0.212);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Itim', cursive;
+    width: 40%;
+    padding: 2em;
+    gap: 2em;
+}
+
+.trabajo h2{
+    font-size: 40px !important;
+}
+
+.trabajo h3{
+    font-size: 1.4em;
+}
+
+.trabajo p{
+    font-size: 1.4em;
+}
+  
+.experiencia h2{
+    font-size: 1.4em;
+}
+
+/* Codigo Proyectos */
+
+.container3{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    gap: 5em;
+    padding: 2em;
+    width: 100em;
+}
+  
+.proyecto{
+    background-color: rgba(151, 208, 255, 0.212);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Itim', cursive;
+    padding: 1em;
+    gap: 3em;
+    height: auto;
+}
+  
+.imgProyecto img{
+    width: 40em;
+    border-radius: 1em;
+    background-color: rgba(151, 208, 255, 0.212);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+}
+
+#imgProy-2{
+    order: 2;
+}
+  
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+.titulo h2{
+    font-size: 40px !important;
+    text-align: center;
+}
+  
+.contenido h3{
+    font-size: 1.7em;
+    gap: 20px;
+}
+  
+.tecnologias{
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+  
+.tecnologias ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 1.4em;
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+#texto{
+    font-size: 1.4em;
+}
+
+
+/* Codigo Formacion */
+
+.container4{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2em;
+    color: #000000;
+    width: 100em;
+}
+  
+.educacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Itim', cursive;
+    width: 100%;
+    gap: 5em;
+    padding: 2em;
+}
+  
+.estudio{
+    background-color: rgba(151, 208, 255, 0.212);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 40%;
+    /* height: 50%; */
+    padding: 2em;
+    gap: 2em;
+}
+
+.estudio h2{
+    font-size: 40px !important;
+}
+
+.estudio h3{
+    font-size: 1.4em;
+}
+
+.estudio p{
+    font-size: 1.4em;
+}
+
+/* Codigo Skills */
+
+.skillsSection{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+    color: #000000;
+    gap: 2em;
+}
+  
+.container6 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100em;
+    gap: 1em;
+}
+  
+.skill{
+    background-color: rgba(151, 208, 255, 0.212);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+.skill img{
+    width: 5em;
+}
+
+#Width7em img{
+    width: 7em;
+}
+
+#jira img{
+    width: 10em;
+    margin-top: 1em;
+}
+
+#trello h6{
+    margin-bottom: 0.2em;
+}
+
+.skill h6{
+    font-size: 2em;
+}
+
+/* Codigo Formulario */
+
+.formulario{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    color: aliceblue;
+    width: 100em;
+    height: 45em;
+    color: #000000;
+}
+
+.form{
+    font-family: 'Itim', cursive;
+    width: 50%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.contacto h1{
+    font-size: 5em;
+}
+
+.contacto p{
+    font-size: 2em;
+}
+
+.form .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.form input, textarea{
+    padding: 0.2em;
+    border: 1px solid #000000;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.form textarea{
+    height: 8em;
+    resize: none;
+}
+
+#boton-enviar{
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media (hover: hover){
+    #boton-enviar:hover{
+        cursor: pointer;
+        background-color: rgb(151, 208, 255);
+    }
+}
+
+#boton-enviar:active{
+    background-color: rgb(0, 140, 255);
+}
+
+/* Validacion formulario */
+
+.formulario .input-oblig-correcto{
+    border: 3px solid green;
+}
+
+.form .inputs .texto-error{
+    font-size: 1.5em;
+    color: red;
+    display: none;
+}
+
+.formulario .input-oblig-incorrecto{
+    border: 3px solid red;
+}
+
+.form .inputs .texto-error-activo{
+    display: block;
+}
+
+/* Codigo footer */
+
+footer{
+    background-color: rgba(255, 255, 255, 0.363);
+    box-shadow: 5px 3px 10px 2px #000000be ;
+    
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5em;
+}
+
+footer h2{
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.container7{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 15em;
+}
+
+.redes{
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+
+.redes img{
+    width: 5em;
+}
+
+#linkedin{
+    width: 5.5em;
+}
+
+@media (hover: hover){
+    .redes img:hover{
+        width: 5.5em;
+    }
+
+    #linkedin:hover{
+        width: 6em;
+    }
+}
