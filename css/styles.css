@@ -1,17 +1,1 @@
-body {
-    background-color: #ffc9c9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
-.image-container {
-    text-align: center;
-}
-
-img {
-    width: 344px;
-    height: 313px;
-}
